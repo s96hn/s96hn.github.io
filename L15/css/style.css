@@ -1,0 +1,179 @@
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 18px;
+    padding: 10px;
+}
+
+.bottomformout {
+    background-color: gray;
+
+}
+
+.bottomformin {
+    /* margin: 50px; */
+    padding: 100px;
+}
+
+.p2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav.bg_gray {
+    background-color: rgba(128, 128, 128) !important;
+}
+
+/*最前面那個(navbar)的字*/
+.navbar-light .navbar-brand {
+    color: black;
+}
+
+/*.navbar-light .navbar-brand:focus, */
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+/*-----*/
+.dropdown-menu {
+    background-color: rgba(128, 128, 128);
+}
+
+/*.dropdown-item:focus, */
+.dropdown-item:hover {
+    background-color: rgba(128, 128, 128);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: black;
+}
+
+.dropdown-item {
+    color: rgba(0, 0, 0, .55);
+}
+
+.dropdown-item.active {
+    color: black;
+    background-color: rgba(128, 128, 128, 0);
+}
+.progress_text,.work,.card-text,.card-title-text,.mypic_pad,.mwk_btn{
+    text-align: left;
+}
+
+/* .redbar{
+    background-color: red;
+} */
+.mypic{
+    background-image:url(../img/dan-cristian-padure-SMSLyc9FHl0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.mypic_pad{
+    padding-top: 30%;
+}
+.mypic_pad .mainl1,.mypic_pad .mainl4{
+    color: rgb(70, 70, 70);
+}
+.mypic_pad .mainl2{
+    color: red;
+    font-size: 50px;
+}
+.mypic_pad .mainl3{
+    color: black;
+    font-size: 30px;
+}
+.btn-danger{
+    margin-top: 30px;
+}
+.redbar{
+    display: block;
+    background-color: rgb(255, 80, 80);
+    text-align: center;
+}
+
+.redbar .h3{
+    background-color: white;
+}
+.cardsx3text h5{
+    text-align: center;
+}
+.cardsx3text p{
+    color: gray;
+    text-align: center;
+}
+.wutido,.abtme,.Latest_Works{
+ display: block;
+ margin: 50px;
+}
+
+/* .abouticon{
+    text-align: right;
+} */
+
+
+/* https://pbs.twimg.com/profile_images/931939610074087424/S_hRnpkp_400x400.jpg 推特頭貼*/
+
+.workpic{
+    position: relative;
+}
+.workpic::before, .workpic::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    transition: transform 0.2s;
+}
+.workpic::before{
+    border-top: 1px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0);
+    transform: scale(0,1);
+}
+.workpic::after{
+    border-left: 1px solid rgb(255, 0, 0);
+    border-right: 1px solid rgb(255, 0, 0);
+    transform: scale(1,0);
+}
+.workpic:hover::before{
+    transform: scale(1.10,1.05);
+}
+.workpic:hover::after{
+    transform: scale(1.05,1.10);
+}
+.workpictext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: aqua;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.workpic:hover .workpictext{
+    opacity: 1;
+}
+
+/* 要讓圖片可以符合大小能用這個
+好像也不用*/
+/* .workimg16x9{
+    object-fit: fill;
+    16:9
+    width: 800px;
+    height: 450px;
+} */
