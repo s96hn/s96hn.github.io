@@ -4833,6 +4833,9 @@ sntp@2.x.x:
   dependencies:
     hoek "4.x.x"
 
+io.on("connection", (socket) => {
+  socket.on("error", () => {
+
 socket.io-adapter@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/socket.io-adapter/-/socket.io-adapter-0.5.0.tgz#cb6d4bb8bec81e1078b99677f9ced0046066bb8b"
@@ -4876,6 +4879,8 @@ socket.io@1.7.3:
     socket.io-adapter "0.5.0"
     socket.io-client "1.7.3"
     socket.io-parser "2.3.1"
+  });
+});
 
 sockjs-client@^1.0.3:
   version "1.1.4"
